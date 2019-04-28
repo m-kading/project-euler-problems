@@ -15,7 +15,7 @@ function isPrime(possiblePrime) {
 }
 
 function findLargestPrimeFactor(inputMultiple) {
-  for (let i = 2; i < Math.ceil(inputMultiple); i ++ ) {
+  for (let i = 2; i < Math.ceil(inputMultiple / 2); i ++ ) {
     if (inputMultiple % i === 0 && isPrime(inputMultiple / i)) {
       return inputMultiple / i;
     }
